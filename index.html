@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        color: white;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(15, 15, 15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100vh;
+      }
+      .container {
+        background-color: rgb(40, 39, 39);
+        width: 270px;
+        border-radius: 3px;
+      }
+      #heading {
+        font-family: sans-serif;
+        color: white;
+        font-size: 1.5rem;
+      }
+      .product-desc {
+        padding: 5px;
+        margin: 8px;
+        color: white;
+        background-color: rgb(76, 77, 76);
+        border: 1px solid black;
+        outline: none;
+        border-radius: 1.9px;
+        height: 30px;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 4px;
+      }
+      .product-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .addtocart {
+        height: 25px;
+        width: 45px;
+        color: white;
+        font-size: 1rem;
+        background-color: rgb(111, 0, 255);
+        border: 0.1px solid rgb(111, 0, 255);
+        cursor: pointer;
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5px;
+      }
+      .hidden {
+        display: none;
+      }
+      #checkout-button {
+        height: 38px;
+        color: white;
+        background-color: rgb(111, 0, 255);
+        border: 0.1px solid rgb(111, 0, 255);
+        cursor: pointer;
+        border-radius: 4px;
+        margin-bottom: 10px;
+      }
+      #checkout-button:hover {
+        background-color: rgb(107, 8, 236);
+        border: 0.1px solid rgb(107, 8, 236);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1 id="h1-heading">E-commerce</h1>
+      </div>
+      <div id="items-list"></div>
+      <div id="checkout-box">
+        <p id="empty-message">Your cart is Empty</p>
+      </div>
+      <div id="cart-total">
+        <p>Total : <span id="total-value"> $0.00</span></p>
+        <button id="checkout-button">CheckOut</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
